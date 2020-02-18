@@ -50,6 +50,6 @@ else{
 
 
 
- export let endPoint = endPointArray;
+ export let endPoints = endPointArray;
 // export let jenkinsEndPoint = service.getResource("v1/Service","jenkins").status.loadBalancer.ingress[0].ip;
 // export let nexusEndPoint = service.getResource("v1/Service","sonatype-nexus").status.loadBalancer.ingress[0].ip;

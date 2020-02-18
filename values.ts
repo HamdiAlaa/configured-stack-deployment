@@ -1,8 +1,16 @@
 export const jenkinsValues = {
     jenkinsUser:"alaa",
     jenkinsPassword:"Mba5922949822;",
-    disableInitialization:"no"
-
+    disableInitialization:"no",
+    livenessProbe:{
+        enabled:false
+    },
+    readinessProbe:{
+        enabled:false
+    },
+    persistence:{
+        size:"8Gi"
+    }
 }
 export const nexusValues = {
     nexus:{
@@ -10,12 +18,12 @@ export const nexusValues = {
             type:'LoadBalancer',
         }
     },
-    nexusProxy:{
-        env:{
-            nexusDockerHost:"localhost:8081",
-            nexusHttpHost:"localhost:8081"
-        }
-    }
+    // nexusProxy:{
+    //     env:{
+    //         nexusDockerHost:"localhost",
+    //         nexusHttpHost:"localhost"
+    //     }
+    // }
 }
 
 export const sonarQube = {
