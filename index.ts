@@ -8,7 +8,9 @@ const __ = new pulumi.Config();
 
 let endPointArray = [];
 var deployed_service_name:string;
-let list_deployed_services = require('../outputs/services.json');
+// let list_deployed_services = require('../outputs/services.json');
+let list_deployed_services = require('../config/stack/services.json');
+
 var values= {};
 
 // Expose a K8s provider instance using our custom cluster instance.
